@@ -605,6 +605,61 @@ int MultiplicationMatrix(int[,] arrayA, int[,] arrayB)
     return arrayC;
 }*/
 
+//Задача 64: Выполнить с помощью рекурсии.Задайте значение N. Напишите программу, которая выведет все натуральные числа в промежутке от N до 1.
+/*Console.Write("Введите число N: ");
+int N = int.Parse(Console.ReadLine()!);
+
+Console.WriteLine(PrintNumbers(N,1));
+
+
+// ------Метод------------------------
+string PrintNumbers(int end, int start)
+{
+    if (end == start) return end.ToString();
+    return (end + " " + PrintNumbers(end - 1, start));
+}*/
+
+//Задача 66: Выполнить с помощью рекурсии.Задайте значения M и N. Напишите программу, которая найдёт сумму натуральных элементов в промежутке от M до N.
+/*Console.Write("Введите значение M: ");
+int M = int.Parse(Console.ReadLine()!);
+Console.Write("Введите значение N: ");
+int N = int.Parse(Console.ReadLine()!);
+
+
+//----------метод---------
+ void GapNumberSum(int M, int N, int sum)
+ {
+    if(M > N)
+    {
+        Console.WriteLine($"Сумма натуральных элементов в промежутке от M до N: {sum}");
+        return;
+    }
+    sum = sum + (M++);
+    GapNumberSum(M, N, sum);
+ }
+ GapNumberSum(M,  N, 0);*/
+
+ //Задача 68: Выполнить с помощью рекурсии.Напишите программу вычисления функции Аккермана с помощью рекурсии. Даны два неотрицательных числа m и n.
+ /*int m = InputNumber("Введите число m: ");
+ int n = InputNumber("Введите число n: ");
+ int functionAkkerman = Ack(m, n);
+ Console.Write($"Функция Аккермана = {functionAkkerman} ");
+
+//----------метод---------
+int Ack(int m, int n)
+{
+    if(m == 0) return n + 1;
+    else if (n == 0) return Ack(m - 1, 1);
+    else return Ack(m - 1, Ack(m, n - 1));
+}
+
+int InputNumber(string input)
+{
+    Console.Write(input);
+    int output = Convert.ToInt32(Console.ReadLine()!);
+    return output;
+}*/
+
 
 
 
